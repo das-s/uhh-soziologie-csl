@@ -1,0 +1,16 @@
+#+TITLE:
+#+DATE:    November 20, 2019
+#+STARTUP: inlineimages
+
+* Description
+This is a CSL stylesheet for stylesheets, aimed for Zotero and others.
+
+ Heavily inspired by Södertörn Högskola Harvard (ibid), thanks to Kurt Berndt (kurt.berndt@sh.se).
+
+ Distributed under CC BY-SA 3.0.
+
+* Configuration
+1. Download the file =uhh-soziologie.csl= by right-clicking and selecting "Save as".
+2. Open Zotero and got to =Edit -> Preferences -> Cite= and click the little =+=
+   below the styles list.
+3. Select the downloaded file and start typing.
