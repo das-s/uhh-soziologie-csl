@@ -31,7 +31,7 @@
     <choose>
       <if type="motion_picture broadcast" match="none">
         <names variable="author">
-          <name and="symbol" delimiter-precedes-last="never" initialize-with=". " name-as-sort-order="all"/>
+          <name and="symbol" delimiter-precedes-last="never" name-as-sort-order="all"/>
           <label form="short" prefix=" "/>
           <et-al font-style="italic"/>
           <substitute>
@@ -263,18 +263,11 @@
   <macro name="locators">
     <choose>
       <if type="article-journal article-magazine" match="any">
-        <group prefix=": " delimiter=": ">
-          <group delimiter="">
-            <text variable="volume"/>
-            <text variable="issue" prefix="(" suffix=")"/>
-          </group>
-          <group>
-            <label variable="page" form="short"/>
-            <text variable="page" prefix=" "/>
-          </group>
-          <group>
-            <text variable="DOI" prefix="doi:"/>
-          </group>
+        <group delimiter=", ">
+          <text variable="volume" prefix="Jg. "/>
+          <text variable="issue" prefix="Nr. " />
+          <label variable="page" form="short"/>
+          <text variable="page" prefix=" "/>
         </group>
       </if>
       <else-if type="article-newspaper" match="any">
@@ -285,7 +278,7 @@
         </group>
       </else-if>
       <else-if type="bill  book graphic legal_case legislation map motion_picture report song thesis" match="any">
-        <group delimiter=": " prefix=". ">
+        <group delimiter=": " >
           <text macro="event"/>
           <text macro="publisher"/>
         </group>
@@ -355,14 +348,15 @@
     </sort>
     <layout suffix=".">
       <text macro="author"/>
-      <group delimiter=". " prefix=" ">
-        <text macro="issued" prefix="(" suffix=")"/>
+      <text macro="issued" prefix=" (" suffix="): " />
+      <group delimiter=", " prefix=" ">
         <text macro="title"/>
         <text macro="container"/>
         <text variable="medium"/>
+        <text macro="locators"/>
+        <text macro="linkingids"/>
+        <text macro="access"/>
       </group>
-      <text macro="locators"/>
-      <text macro="access" prefix=". "/>
     </layout>
   </bibliography>
 </style>
