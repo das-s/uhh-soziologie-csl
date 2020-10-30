@@ -24,8 +24,6 @@
     <terms>
       <term name="et-al">et al.</term>
       <term name="page" form="short">
-        <single>S.</single>
-        <multiple>S.</multiple>
       </term>
       <term name="number-of-pages" form="short">
         <single>S.</single>
