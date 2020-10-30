@@ -48,10 +48,10 @@
       <else>
         <choose>
           <if variable="container-title">
-            <text variable="container-title" font-style="italic"/>
+            <text variable="container-title"/>
           </if>
           <else>
-            <text variable="title" font-style="italic"/>
+            <text variable="title"/>
           </else>
         </choose>
       </else>
@@ -81,10 +81,10 @@
       <else>
         <choose>
           <if variable="container-title">
-            <text variable="container-title" font-style="italic"/>
+            <text variable="container-title"/>
           </if>
           <else>
-            <text variable="title" font-style="italic"/>
+            <text variable="title" />
           </else>
         </choose>
       </else>
@@ -130,7 +130,7 @@
     <choose>
       <if type="thesis" match="any">
         <group delimiter=". ">
-          <text variable="title" font-style="italic"/>
+          <text variable="title"/>
           <group>
             <text variable="genre"/>
             <text variable="number" prefix=" No. "/>
@@ -141,7 +141,7 @@
         <group delimiter=". ">
           <group delimiter=": ">
             <group delimiter=" ">
-              <text variable="title" font-style="italic"/>
+              <text variable="title" />
             </group>
             <text variable="scale"/>
           </group>
@@ -150,7 +150,7 @@
       </else-if>
       <else-if type="motion_picture broadcast" match="any"/>
       <else-if type="patent" match="any">
-        <text variable="title" font-style="italic" suffix=". "/>
+        <text variable="title" suffix=". "/>
       </else-if>
       <else>
         <text variable="title"/>
@@ -167,7 +167,7 @@
             <label form="short" prefix=" (" suffix=")"/>
           </names>
           <group delimiter=" ">
-            <text variable="container-title" font-style="italic"/>
+            <text variable="container-title"/>
           </group>
         </group>
       </if>
@@ -189,7 +189,7 @@
       </else-if>
       <else>
         <group delimiter=" ">
-          <text variable="container-title" font-style="italic"/>
+          <text variable="container-title"/>
         </group>
       </else>
     </choose>
