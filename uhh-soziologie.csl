@@ -129,7 +129,7 @@
           <text variable="title"/>
           <group>
             <text variable="genre"/>
-            <text variable="number" prefix=" No. "/>
+            <text variable="number" prefix=" Nr. "/>
           </group>
         </group>
       </if>
@@ -195,7 +195,7 @@
       <if type="report">
         <group>
           <text variable="genre"/>
-          <text variable="number" prefix=" No. "/>
+          <text variable="number" prefix=" Nr. "/>
         </group>
       </if>
     </choose>
