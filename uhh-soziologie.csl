@@ -368,10 +368,11 @@
   <bibliography hanging-indent="true" entry-spacing="0" line-spacing="1">
     <sort>
       <key macro="author"/>
-      <key macro="issued" sort="ascending"/>
+      <key macro="issued"/>
     </sort>
     <layout suffix=".">
       <text macro="author"/>
+      <!-- TODO This requires some more work regarding last access for web pages -->
       <text macro="issued" prefix=" (" suffix="): " />
       <group delimiter=", " prefix=" ">
         <text macro="title"/>
