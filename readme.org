@@ -3,14 +3,19 @@
 #+STARTUP: inlineimages
 
 * Description
-This is a CSL stylesheet for stylesheets, aimed for Zotero and others.
+This is a CSL stylesheet for the Universität Hamburg aimed at Zotero and Endnote users.
+Based on the setup for Södertörn Högskola Harvard (ibid), thanks to Kurt Berndt (kurt.berndt@sh.se).
 
- Heavily inspired by Södertörn Högskola Harvard (ibid), thanks to Kurt Berndt (kurt.berndt@sh.se).
-
- Distributed under CC BY-SA 3.0.
-
-* Configuration
-1. Download the file =uhh-soziologie.csl= by right-clicking and selecting "Save as".
+* Installation in Zotero
+1. Open [[https://raw.githubusercontent.com/das-s/uhh-soziologie-csl/main/uhh-soziologie.csl][the csl file in raw mode]], click right inside the file and selecting "Save as". Make sure the file ending is =.csl=!
 2. Open Zotero and got to =Edit -> Preferences -> Cite= and click the little =+=
    below the styles list.
 3. Select the downloaded file and start typing.
+
+* Disclaimer
+This is work in progress and subject to frequent changes. Especially edge might not be set correctly yet.
+
+* Deutscher Hinweis
+Dies ist ein CSL-Stylesheet für den von der Uni Hamburg - Fachbereich Soziologie - geforderten Zitierstil. Bei der Erstellung dienten maßgeblich mündliche und schriftliche Vorgaben aus unterschiedlichen Modulen als Richtlinie. Allerdings ist die derzeitige Vorgabe womöglich nicht vollständig für sämtliche Randfälle.
+
+Pull requests sind herzlich willkommen!
